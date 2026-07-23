@@ -1,0 +1,53 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# build outputs
+dist
+dist-node
+build
+.next
+.turbo
+*.tsbuildinfo
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+!.env.example
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# editor / os
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+
+# coverage / cache
+coverage
+.eslintcache
+.cache
+
+# prisma generated client (regenerated on build)
+apps/api/prisma/generated
+
+# uploads (local dev storage)
+uploads
+
+# docker volumes (if running compose locally)
+infra/docker/volumes
+
+# local test artifacts
+*.out
+*.err
+tsconfig.tsbuildinfo

@@ -1,0 +1,13 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+allowBuilds:
+  '@prisma/client': set this to true or false
+
+# Native build scripts that must run during install (pnpm 11 blocks them by default).
+onlyBuiltDependencies:
+  - "@prisma/engines"
+  - esbuild
+  - msgpackr-extract
+  - prisma

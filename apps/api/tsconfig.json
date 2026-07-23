@@ -1,0 +1,11 @@
+{
+  "extends": "@hrms/config/tsconfig.node.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "experimentalDecorators": false
+  },
+  "include": ["src", "prisma", "src/**/*.json"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "vitest.config.ts"]
+}
