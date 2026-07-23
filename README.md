@@ -1,6 +1,20 @@
 # HRMS — Human Resource Management System
 
+> **🚀 Live demo:** **https://compliance-nasa-processors-strand.trycloudflare.com**
+>
+> Open the link in any browser — it auto-logs you in as admin (`admin@acme.demo` / `Admin123456`) with sample data across every module. No signup required.
+
 A multi-tenant, modular HRMS built with Node.js/Express + React, PostgreSQL, Redis, and MinIO — containerized for deployment on a Plesk-managed VPS.
+
+## Live demo
+
+| | |
+|---|---|
+| **URL** | https://compliance-nasa-processors-strand.trycloudflare.com |
+| **Login** | `admin@acme.demo` / `Admin123456` (auto-filled) |
+| **Mode** | Interactive demo with sample data (dashboard, employees, attendance, leave, payroll, performance, recruitment, assets, engagement, reports) |
+
+The public link is served via a Cloudflare Tunnel and is reachable from anywhere.
 
 ## Stack
 
@@ -27,11 +41,19 @@ docs/           ADRs, ERD, deployment runbook
 .github/        CI workflows
 ```
 
-## Modules (v1 scope)
+## Modules (v1 — complete)
 
 - ✅ **Auth** — login, JWT, rotating refresh cookies, TOTP MFA, invitations, password reset
 - ✅ **System** — tenants, multi-tenancy, RBAC, audit log
-- ⏳ Employees & Organization · Attendance & Leave · Payroll · Performance · Recruitment/ATS · Assets · Engagement · Reports
+- ✅ **Employees & Organization** — profiles, departments, designations, documents, org chart
+- ✅ **Attendance** — clock in/out, timesheet, manual entry, overtime
+- ✅ **Leave** — requests, approvals, balances, working-days calc
+- ✅ **Payroll** — computation engine, salary structures, pay runs, payslips, tax tables
+- ✅ **Performance** — goals, review cycles, 360 feedback
+- ✅ **Recruitment / ATS** — job openings, candidate pipeline, auto-hire conversion
+- ✅ **Assets** — registry, issue/return, history
+- ✅ **Engagement** — announcements, document portal, notifications
+- ✅ **Reports & Dashboards** — role-scoped KPIs, charts, CSV exports
 
 ## Getting started (local)
 
